@@ -1,0 +1,160 @@
+/* src/App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes at least the full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   /* Set the background image */
+   background-image: url('./assests/bg.PNG'); /* Replace 'path-to-your-image.jpg' with the actual image file path */
+   background-size: cover; /* This property scales the image to cover the entire container */
+   background-repeat: no-repeat; /* Prevent the background image from repeating */
+   background-position: center; /* Center the background image */
+}
+
+.chat-icon-container {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.chatbot-container {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow:hidden;
+  margin: 0 auto;
+  height: 70vh;
+  position: relative;
+  background-color: white;
+}
+
+.chatbot-dialog {
+  max-height: calc(100% - 80px); /* Adjust the height as needed */
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #0099cc;
+  color: #fff;
+  /* text-align: right; */
+}
+
+.message.bot {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.chatbot-input {
+  position: fixed;
+  bottom: 05px;
+  right: 20px;
+  width: 282px;
+  background-color: #fff; /* Add your preferred background color */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc; /* Add a border if desired */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.chatbot-input button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff; /* Add your preferred button background color */
+  color: #fff; /* Add your preferred button text color */
+  border: none;
+  cursor: pointer;
+}
+
+.chatbot-input button:hover {
+  background-color: #0077aa;
+}
+
+
+.chatbot-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align user messages to the right */
+}
+
+.message {
+  padding: 8px;
+  margin: 4px;
+  border-radius: 8px;
+  max-width: 70%; /* Limit the width of messages */
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #3498db; /* User message background color */
+  color: #fff; /* User message text color */
+  align-self: flex-end; /* Align user messages to the right */
+}
+
+.bot {
+  background-color: #e0e0e0; /* Bot message background color */
+  color: #333; /* Bot message text color */
+  align-self: flex-start; /* Align bot messages to the left */
+}
+
+
+/* Header */
+
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  font-size: 18px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
